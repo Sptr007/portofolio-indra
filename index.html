@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<style>
+    .col-md-4{
+        margin-bottom: 50px;
+    }
+    .modal-body img {
+        width: 100%;
+        height: auto;
+    }
+ 
+    .col-md-4{
+        margin-bottom: 50px;
+    }
+    .heade{text-align: center;
+        background-color: rgb(31, 31, 31);
+        padding: 2px;
+        color:white;}
+
+    .skill-box {
+        background: rgb(46, 46, 46);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 5px;
+        color: white;
+    }
+    .skill-box p{
+        margin: 0px;
+    }
+    .ui{
+        border-bottom: 0.5px solid rgb(136, 136, 136);
+    }
+</style>
+<body>
+ 
+<div class="heade">
+            <h1 class="tengah">Selamat Datang di Portofolio Saya</h1>
+</div>
+    
+    <!-- Hero Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <img src="indra.jpg" class="rounded-circle mb-3" alt="Foto Pribadi" width="150">
+            <h1>Indra Adi Saputra</h1>
+            <p class="lead">GIS Enthusiast | Spatial Analyst and Research</p>
+        </div>
+    </header>
+    
+    <!-- About Section -->
+    <section id="about" class="py-5 ui">
+        <div class="container text-center">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah Fresh Graduate S-1 Geografi dari Universitas Muhammadiyah Surakarta dengan minat kuat di bidang GIS, Penginderaan Jauh, dan Analisis Geospasial. Berpengalaman dalam analisis data spasial, pemetaan digital, serta pemrosesan citra satelit untuk mendukung pengambilan keputusan berbasis geospasial.
+
+                Saya menguasai berbagai perangkat lunak pemetaan dan analisis spasial, termasuk ArcGIS, QGIS, AutoCAD, dan ENVI. Dikenal sebagai individu yang teliti, analitis, dan bertanggung jawab, dengan kemampuan adaptasi yang baik dalam menyelesaikan proyek berbasis data spasial. Saya memiliki semangat tinggi untuk terus belajar dan berkembang di bidang geospasial guna memberikan solusi inovatif dalam berbagai aspek perencanaan dan pembangunan.</p>
+        </div>
+    </section>
+
+     <!-- Skills Section -->
+     <section id="skills" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Keahlian</h2>
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-2 skill-box"><p>Microsoft Office</p></div>
+                <div class="col-md-2 skill-box"></i><p>ArcGIS</p></div>
+                <div class="col-md-2 skill-box"></i><p>QGIS</p></div>
+                <div class="col-md-2 skill-box"></i><p>HTML</p></div>
+                <div class="col-md-2 skill-box"></i><p>CSS</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-dark">
+        <div class="container text-center">
+            <h2 style="color:white;">Proyek Saya</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="peta1.png" class="card-img-top" alt="Peta IPM di Pulau Jawa Tahun 2023" 
+                        data-bs-toggle="modal" data-bs-target="#imageModal" 
+                        onclick="showImage('peta1.png', 'Peta IPM di Pulau Jawa Tahun 2023', 
+                        'Peta IPM di Pulau Jawa Tahun 2023 adalah proyek pemetaan tematik yang menampilkan distribusi Indeks Pembangunan Manusia (IPM) di setiap provinsi di Pulau Jawa. Peta ini dikembangkan menggunakan GIS untuk menganalisis kesenjangan dan potensi pembangunan berkelanjutan di berbagai wilayah. Proyek ini meraih Juara 2 Nasional dalam Geo-Science National Competition 2024.')">
+                         <div class="card-body">
+                            <h5 class="card-title">Peta IPM di Pulau Jawa Tahun 2023</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="peta2.png" class="card-img-top" alt="Peta IPM di Pulau Jawa Tahun 2023" 
+                        data-bs-toggle="modal" data-bs-target="#imageModal" 
+                        onclick="showImage('peta2.png', 'Peta IPM di Pulau Jawa Tahun 2023', 
+                        'Peta IPM di Pulau Jawa Tahun 2023 adalah proyek pemetaan tematik yang menampilkan distribusi Indeks Pembangunan Manusia (IPM) di setiap provinsi di Pulau Jawa. Peta ini dikembangkan menggunakan GIS untuk menganalisis kesenjangan dan potensi pembangunan berkelanjutan di berbagai wilayah. Proyek ini meraih Juara 2 Nasional dalam Geo-Science National Competition 2024.')">
+                         <div class="card-body">
+                            <h5 class="card-title">Peta IPM di Pulau Jawa Tahun 2023</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!-- Modal Full Screen dengan Deskripsi di Sebelah Kanan -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content" style="background-color: rgba(0, 0, 0, 0.9);">
+            <div class="modal-header border-0">
+                <h5 class="modal-title text-white" id="modalImageTitle"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex flex-column flex-md-row align-items-center">
+                <!-- Bagian Gambar -->
+                <div class="col-12 col-md-8 d-flex justify-content-center align-items-center">
+                    <img id="modalImage" src="" class="img-fluid" style="max-width: 100%; max-height: 80vh; object-fit: contain;">
+                </div>
+                <!-- Bagian Deskripsi -->
+                <div class="col-12 col-md-4 text-white p-4" style="overflow-y: auto;">
+                    <h5 id="modalImageTitleDesc"></h5><hr>
+                    <p id="modalImageDesc" class="text-justify" style="text-align: justify;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Publication Section -->
+    <section id="publications" class="py-5">
+        <div class="container text-center">
+            <h2>Publikasi</h2>
+            <p>Berikut adalah beberapa publikasi saya:</p>
+            <ul class="list-group">
+                <li class="list-group-item"><b>Spatiotemporal Analysis of Land Surface Temperature Changes by Vegetation Density in Central Lombok Regency -   </b><a href="https://iopscience.iop.org/article/10.1088/1755-1315/1357/1/012007/">Link</a></li>
+                <li class="list-group-item">Judul Publikasi 2 - <a href="#">Link</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Resume Section -->
+    <section id="resume" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2>Resume</h2>
+            <p>Unduh resume saya dalam format PDF di bawah ini:</p>
+            <a href="resume.pdf" class="btn btn-primary" download>Unduh Resume</a>
+        </div>
+    </section>
+    
+   <!-- Contact Section -->
+   <section id="contact" class="py-5">
+    <div class="container text-center">
+        <h2>Kontak</h2>
+        <a href="mailto:adisaputraindra007@gmail.com" class="me-3"><i class="bi bi-envelope-fill fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/indra-adi-saputra-0b8642348/" target="_blank"><i class="bi bi-linkedin fa-2x"></i></a>
+    </div>
+</section>
+    
+<script>
+    function showImage(src, title, description) {
+        document.getElementById('modalImage').src = src;
+        document.getElementById('modalImageTitleDesc').textContent = title;
+        document.getElementById('modalImageDesc').textContent = description;
+    }
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
